@@ -1,0 +1,201 @@
+/*Google Fonts Open Sans Link */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans' sans-serif ;
+}
+
+
+section
+{
+    width: 100%;
+    height: 100vh;
+    background: url(/img/imagen1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+.signupForm
+{
+    background: transparent;
+    transition: .3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+}
+
+.signupForm .header
+{
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.header::before
+{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    background: #020202;
+    width: 50%;
+    height: 3px;
+    border-radius: 30px;
+    z-index: 5;
+}
+
+.header h1{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.input-group
+{
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+}
+
+.inputFields
+{
+    font-size: 16px;
+    padding: 10px;
+    padding-left: 40px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #030303;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    transition: all .3s;
+
+}
+
+.input-group i
+{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+
+}
+
+.inputFields::placeholder
+{
+    color: #fff;
+}
+
+.inputFields:hover::placeholder
+.input-group:hover i
+{
+    color: #020202;
+}
+
+.inputFields:valid
+{
+    color: rgba(0, 0, 0, 5);
+}
+
+.signup-btn
+{
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px;
+    text-transform: none;
+    width: 100%;
+    cursor: pointer;
+    transition: all .3s;
+    background:  #1f53c5;
+}
+
+.signup-btn:hover
+{
+    background: rgba(0, 0, 0, 1);
+    border-radius: 3px;
+    color: #080808;
+
+}
+
+.social
+{
+    list-style-type: none;
+    margin-top: 50px;
+
+}
+
+.social p{
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social li
+{
+    display: inline-block;
+}
+
+.social li a
+{
+    color: #fff;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fdfcfc;
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 5);
+    transition: all .3s;
+}
+
+.social li a:hover
+{
+    color: #080808;
+    background: rgba(0, 0, 0, 1);
+
+}
+
+.pre-acc
+{
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+.pre-acc a
+{
+    color: #0a0a0a;
+    text-decoration: none;
+}
+
+.pre-acc a:hover
+{
+    text-decoration: underline;
+
+}
